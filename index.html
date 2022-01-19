@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HOME</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="css_home.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+    body{
+        background-image: url("background.jpg");
+        /* background-color: rgb(11, 130, 146); */
+    }
+    .article {
+        position: relative;
+        z-index: 1;
+        }
+
+    .article:before {
+        content: " ";
+        position: absolute;
+        top: 0; 
+        left: 0;
+        width: 1517px; 
+        height: 850px;  
+        opacity: .4; 
+        z-index: -1;
+        background: url("header.jpg");
+    }
+    .parallax {
+    /* The image used */
+
+    /* Set a specific height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .logo{
+        background-color: rgb(225, 245, 255);
+        width: fit-content;
+        border-radius: 10px;
+    }
+    .header {
+    border:1px solid rgb(0, 17, 75);
+    width:100%;
+    height:750px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color:rgb(20, 77, 85); */
+    color: rgba(255,255,255,1);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+
+    .header a{
+        border: 1px solid rgb(0, 68, 77);
+        background-color: rgb(156, 103, 103);
+        color:rgb(255, 255, 255);
+    }
+    .header a:hover, .header a.active {
+        color: rgb(10, 34, 65);
+        background-color: rgb(171, 193, 216);
+    }
+    .d1{
+        background-color: rgb(210, 238, 238);
+        color: rgb(232, 252, 252);
+    }
+    .d1 a{
+        color:rgb(70, 41, 122);
+        font-weight: bold;
+    }
+    .d1 h1{
+        font-size: 30px;
+        font-weight:bold;
+        color:#004a50;
+        text-align: center;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .tab-content{
+        background-color: rgb(77, 152, 161);
+        border-radius: 10px;
+    }
+
+    .navbar{
+        /* background-color: rgb(21, 100, 100); */
+        background-image: url("background.jpg");
+        /* border-bottom: solid 2px ghostwhite; */
+        
+    }
+
+    .d-flex{
+        width: 800px;
+        color:darkblue;
+        margin-top: 150px;
+        margin-left: 100px;
+        height: 50px;
+
+    }
+    
+    .btn12 {
+        background-color: rgb(238, 92, 24);
+        color: whitesmoke;
+        margin-right: 10px;
+        width: 160px;
+        border-radius: 5px;
+        font-size: 20px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .btn12:hover, .btn12.active {
+        background-color: rgb(164, 189, 223);
+        color: rgb(10, 61, 73);   
+    }
+
+    .banner {
+    height: 400px;
+    width: 60%;
+    text-align: center;
+    margin: 13% auto;
+    font-family:Arial, Helvetica, sans-serif;
+    }
+    .banner h1 {
+        font-size: 60px;
+        font-weight:bold;
+        color:#f0f0f0;
+    }
+    .banner h2 {
+    /* padding-top:20px; */
+    font-size: 30px;
+    color: #b0f5ef;
+    word-spacing: 1px;
+    background-color: rgb(64, 50, 112);
+    width: fit-content;
+    margin-left: 90px;
+    }
+
+    .features {
+    background-color: #050505;
+    color: rgb(195, 233, 56);
+    width: 1517px;
+    padding: 30px 0;
+    text-align: center;
+    font-size: larger;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .features ul li {
+    width: 100%;
+    float: none;
+    margin-bottom: 35px;
+    }
+
+    li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    }
+    
+    .btn11{
+        background-color: rgb(190, 234, 255);
+        text-decoration: none;
+        /* text-transform: uppercase; */
+        font-size:18px;
+        color: rgb(70, 64, 99);
+        display: block;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        border: 2px solid rgb(0, 153, 77);
+        width: 200px;
+        height: 50px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 7px;
+        opacity: 70%;
+    }
+    .btn11:hover, .btn11.active {
+        color: rgb(0, 52, 119);
+        background-color: lightslategray;
+    }
+    .card{
+        background-color: honeydew;
+    }
+    .card a {
+        font-size: 20px;
+        text-align: center;
+        color: cadetblue;
+        border: 2px solid darkgray;
+        border-radius: 7px;
+    }
+    .cs{
+        margin: 150px;
+    }
+    .canvas{
+        color: rgb(68, 141, 214);
+    }
+
+
+    .btn31{
+        background-color: rgb(104, 178, 202);
+        text-decoration: none;
+        font-size:18px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(56, 58, 85);
+        margin: 90px auto;
+        display: block;
+        font-weight: bold;
+        border: 2px solid rgb(4, 49, 40);
+        width: 20%;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        border-radius: 7px;
+    }
+    .btn31:hover, .btn41.active {
+        color: rgb(0, 52, 119);
+        background-color: lightslategray;
+    }
+    .btn41{
+        background-color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size:10px;
+        color: rgb(230, 72, 72);
+        margin: 20px auto;
+        display: block;
+        font-weight: bold;
+        border: 2px solid rgb(0, 255, 204);
+        width: 27%;
+        height: 50px;
+        /* line-height: 70px; */
+        text-align: center;
+        border-radius: 7px;
+    }
+    .btn41:hover, .btn41.active {
+        color: rgb(0, 109, 82);
+        background-color: lightslategray;
+    }
+    .card-title{
+        color:rgb(34, 139, 90)
+    }
+    .card-text{
+
+    }
+    .footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgba(255,255,255,0.60);
+    text-align:center;
+    }
+    .footer h1 {
+        font-size: 40px;
+        font-weight: bold;
+        color: rgba(255,255,255,0.9);
+        padding-top: 30px;
+
+    }
+    .footer p {
+    font-size: 19px;
+    padding-top: 4px;
+    word-spacing: 2px;
+    }
+    .footer .txt {
+        display: inline-block;
+        width:78%;
+        height:86px;
+        margin-top: 70px;
+        font-weight: normal;
+        font-size:16px;
+        line-height: 180%;
+        color: rgba(255,255,255,0.8);
+    }
+    .footer2{
+        color: rgb(199, 238, 245);
+        margin-top: 50px;
+        margin-left: 80px;
+    }
+    .footer2 h2{
+        color: rgb(195, 233, 56);
+        font-size: 100px;
+    }
+    .p11{
+        color: rgb(247, 197, 131);
+        margin-left: 22px;
+    }
+
+    .footer2 a{
+        color: rgb(191, 208, 221);
+    }
+    .footer2 a:hover{
+        color: rgb(33, 105, 160);
+        background-color: rgb(185, 175, 175);
+        width: fit-content;
+    }
+    .m1{
+        margin-left: 20px;
+    }
+    .m2{
+        margin-top: 90px;
+    }
+    </style>
+</head>
+<body>
+    <div class="parallax"></div>
+    <div class="header article">
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top justify-content-center">
+            <div class="container-fluid">
+            <div id="logo" class="logo"><img src="http://www.proyash.org.in/swd/assets/images/logo.png"/></div>
+            <ul class="nav nav-pills nav-justified justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Center</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Courses</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Computer Science Eng</a></li>
+                      <li><a class="dropdown-item" href="#">Mechanical Eng</a></li>
+                      <li><a class="dropdown-item" href="#">Civil Eng</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">AboutUs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <button type="button" class="btn11" data-bs-toggle="modal" data-bs-target="#myModal">
+                <span class="spinner-grow spinner-grow-sm"></span>
+                Apply here..
+            </button>
+            </div>
+        </nav>
+        <div class="banner">
+                <h1>Proyash Technical Training Institute</h1><br/>
+                <h2>A division of Proyash Educational and Social Trust</h2>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Looking for something?">
+                    <button class="btn12" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="offcanvas offcanvas-top h-auto" id="demo">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                <h1 class="canvas">Achievements</h1>
+            </div>
+            <div class="offcanvas-body">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                        <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Boat on Calm Water"
+                        />
+                        
+                        <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Wintry Mountain Landscape"
+                        />
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Mountains in the Clouds"
+                        />
+                        
+                        <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Boat on Calm Water"
+                        />
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Waves at Sea"
+                        />
+                        
+                        <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Yosemite National Park"
+                        />
+                    </div>
+                </div>
+                <button type="button" class="" data-bs-dismiss="offcanvas">Close</button>
+            </div>
+        </div>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Student Application</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    
+                    <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                        <label for="email">Email</label>
+                    </div>
+                    
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                        <label for="pwd">Password</label>
+                    </div>
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="phn" placeholder="Enter mobile no" name="phn">
+                        <label for="phn">Mobile No.</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="selectprefferedcourse">Choose Course</label>
+                        <select id="selectprefferedcourse" name="selectprefferedcourse" class="form-control">
+                            <option label="Automobileengineering" value="Automobile Engineering">Automobile Engineering</option>
+                            <option label="" value=""></option>
+                        </select></br>
+                        <div class="form-group">
+                            <label for="phn">From where did you heard about us?</label>
+                            <input type="text" class="form-control" id="phn" placeholder="type here" name="phn">
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Apply</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Request a Call</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="features">
+        <ul class="nav nav-pills nav-justified">
+          <li class="nav-item">
+            <i class="fa fa-line-chart" style="font-size:48px;color:powderblue"></i>
+          </br></br>Optimal Strategy
+        </li>
+          <li class="nav-item">
+            <i class="fa fa-file-text" style="font-size:48px;color:powderblue"></i>
+          </br></br>Precise Documentation
+          </li>
+          <li class="nav-item">
+            <i class="fa fa-clock-o" style="font-size:48px;color:powderblue"></i>
+          </br></br>Time management
+          </li>
+        </ul>
+    </div>
+    <div class="d1">
+    </br>
+    <h1>Latest Updates from our departments</h1>
+    <div class="container-fluid">
+        <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#home">CSE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu1">ME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu2">CE</a>
+            </li>
+        </ul>
+    </br></br>
+    <div class="tab-content">
+        <div class="tab-pane container active" id="home"><b>Computer Science & IT</b>
+            <p></br>Since 2002, the Department of Computer Engineering, VIIT is dedicated to imparting quality education in the field of Computer Engineering. We now offer a four-year full-time Undergraduate (B.Tech.) degree program with an intake of 240. We offer a Postgraduate program as well, and this year we start with our Ph.D. program too.
+                
+                The Computer Engineering program has been accredited three times by the National Board of Accreditation (NBA) up to the year 2021. The department has state-of-art well-equipped laboratories and well qualified, experienced faculty who follow the NBA prescribed philosophy of outcome-based education (OBE). Our teaching is learner-centric, with importance given to achieving the objectives of the learning process. Our syllabus is in line with industry needs and includes contributions from industry experts. Various other activities and student interactions, in the department, are planned with a constant awareness of the graduate attribute that student should have at the end of the program.
+                
+                In the past few months, during the lockdown period due to COVID-19 pandemic, systematic learning continued for our students. The faculty immediately switched to online delivery of lectures and practical sessions. Many other online activities were organized for students for proper utilization of time. Two such activities are a lecture series by Computer Society of India (CSI) and Machine Learning (ML) course by ACM.</p>
+            </div>
+            <div class="tab-pane container fade" id="menu1"><b>Mechanical Engineering</b>
+                <p></br>Vishwakarma Institute of Information Technology (VIIT) started Undergraduate Mechanical Engineering course in 2007-08, Postgraduate course in 2012 and PhD course from 2014-15 in Pune. The Undergraduate course is an NBA Accredited course.
+                    
+                    The Mechanical Engineering department has well Qualified, Experienced and committed faculty towards high academic standards, Industry connects and Research. The Department expertise is distributed in three domain namely Design, Thermal, Manufacturing and Materials. The curriculum is balanced through industrial involvement, project based learning (PBL) and industrial Internship. The department has PhD Research Guides who ensures the collective involvement of PhD, M-Tech and B.Tech students in their research work.  
+                    
+                    The Department has ongoing collaborative projects with various companies such as Atlas Copco, Fluid Control, Kirloskar Pneumatic, Eaton Pvt Ltd, Bharat Forge, Aakar Foundry etc. The SUPRA and BAJA students technical activities are initiated in department since 2012 and is consistently within top 10 ranks in overall participation till date. The Department also has an International collaboration with TRIUMF, Research centre Canada, National Collaboration with ARDE, DRDO, HAL, ISRO for the research projects and internships.
+                    
+                    The Mechanical Engineering Student Association (MESA) is an active team of students behind organization of Technical and Extra Curricular and societal activities of the department. The Department has a student’s professional chapters under Society of Automotive Engineering (SAE-India) and Indian society of Heating Refrigeration and Air Conditioning Engineering (ISHRAE). The UG and PG students have registered the highest package placement of 14 Lakhs and 16 Lakhs respectively for 2020-21 batch.</p>
+                </div>
+                <div class="tab-pane container fade" id="menu2"><b>Civil Engineering</b></div>
+                <p></br></p>
+            </div>
+        </br>
+    </div>
+</div><br/>
+<div id="accordion">
+    <div class="card">
+        <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                Demo Classes
+                </a>
+                Book your Demo class and learn from the Best
+            </div>
+            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    Book your Demo class and learn from the Best
+                </div>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                Admission Guide
+                </a>
+                Each course has a specific percentage criteria for admission
+            </div>
+            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    Each course has a specific percentage criteria for admission
+                </div>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                    Online Test Series
+                </a>
+                Keep yourself prepared with our impovised test series
+            </div>
+            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                Keep yourself prepared with our impovised test series
+                </div>
+            </div>
+            </div>
+        </div><br/>
+            <div class="carousel-inner py-4">
+              <!-- Single item -->
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <div class="card">
+                        <img
+                          src="o2.png"
+                          class="card-img-top"
+                          alt="Sunset Over the Sea"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Booster Classes</h5>
+                          <p class="card-text">
+                            Never get backed off
+                          </p>
+                          <a href="#!" class="btn41">Check</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <div class="card">
+                        <img
+                          src="o3.png"
+                          class="card-img-top"
+                          alt="Sunset over the Sea"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Foundation Program</h5>
+                          <p class="card-text">
+                            Some quick courses which you should not miss
+                          </p>
+                          <a href="#!" class="btn41">Check</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <div class="card">
+                          <img
+                            src="o1.png"
+                            class="card-img-top"
+                            alt="Sunset Over the Sea"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">One-to-one Mentor</h5>
+                            <p class="card-text">
+                              No doubts remain unsolved
+                            </p>
+                            <a href="#!" class="btn41">Check</a>
+                          </div>
+                        </div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Single item -->
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                      <div class="card">
+                        <img
+                          src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
+                          class="card-img-top"
+                          alt="Fissure in Sandstone"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Comprehensive Tests</h5>
+                          <p class="card-text">
+                            Have a look at our upcoming test modules
+                          </p>
+                          <a href="#!" class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <div class="card">
+                        <img
+                          src="https://mdbcdn.b-cdn.net/img/new/standard/nature/186.webp"
+                          class="card-img-top"
+                          alt="Hot Air Balloons"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk
+                            of the card's content.
+                          </p>
+                          <a href="#!" class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        <button class="btn31" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            View Achievements
+        </button>
+        </div>
+        <div class="footer">
+            <h1>Principal's Desk</h1>
+            <p>a small message to the students</p>
+            <p class="txt">PTTI is dedicated to develop skilled students who can pursue their interests and strengths to the best of their ability so that our enriched students merge into society building a strong generation for a better world tomorrow. Creating better human beings’ is our motto and we can do that when we are able to mould our students to be good human beings with values which are embedded for life. We aim to provide an overall development that nurtures them towards becoming strong and focused human beings. The main focus of PTTI is to empower students with sound knowledge, wisdom, experience and training in the highly competitive global industrial market. As we look into the future, one thing is certain – Skilled manpower will be a key resource for the development of our country. Skilled workers are considered to be the prime movers to achieve better quality and higher productivity in the most cost effective manner. There is always a scarcity of skilled personnel in the various sectors of our country. Our challenge is to generate ideas that will ultimately benefit the Society by providing quality skill development and to train people to work in fields where they will be valued for their specialized knowledge and skill. We offer rigorous practical training as per the norms of National Skill Development Corporation (NSDC) by the qualified and trained instructors. In addition to the regular classes, the students are also encouraged to organize skill development programs and workshops by the experienced professionals to improve and sharpen their knowledge. We are committed to trained our students to meet the incremental challenges in the industries. I would like to tell everyone to take advantage of this course, innovative training, friendly atmosphere provided here at very low cost course fees.</br></p>
+            <p></br></p>
+        </div>
+        <div class="footer2">
+        <div class="row">
+            <div class="col-sm-3">
+                <h2>PTTI</h2>
+            </br>
+            <p class="p11">a div of Proyash Group</p>
+            </div>
+            <div class="col-sm-3">
+                <h5>Quick Links</h5>
+                <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">AboutUs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Center</a>
+                </li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h5>Check Out</h5>
+                <ul class="nav nav-pills nav-justified">
+                    <li class="nav-item">
+                        <i class="fa fa-facebook-square" style="font-size:24px"></i> 
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa fa-linkedin-square" style="font-size:24px"></i>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa fa-twitter-square" style="font-size:24px"></i>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa fa-telegram" style="font-size:24px"></i>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa fa-youtube-square" style="font-size:24px"></i>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa fa-whatsapp" style="font-size:24px"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h5>Contact</h5>
+                <p>Telephone: +91 821xxxx712</p>
+                <p>Email-ID: <a href="">proyashxx@gmail.com</a></p>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
